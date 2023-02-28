@@ -98,16 +98,16 @@ def retrieve(file_name):
     )
 
 def main():
-    for i in range(5):
+    for i in range(9):
         file = open('results.txt', 'a')
-        file.write(months[5 - i])
+        file.write(months[9 - i])
         file.close()
 
         global month_counter
 
         month_counter = 0
 
-        file = open('wet.paths' + str(5 - i), 'r')
+        file = open('wet.paths' + str(9 - i), 'r')
         paths = file.readlines()
 
         for path in paths:
